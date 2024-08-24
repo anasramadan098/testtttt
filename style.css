@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Droid-Arabic";
+    src: url("Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Droid-Arabic';
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Start Header */
+header {
+    padding: 40px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .bars {
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .logo {
+        max-width: 40%;
+    }
+    .btns {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-size: 14px;
+        a:not(.lang) {
+            font-weight: bold;
+            padding: 10px 12px;
+            border-radius: 10px;
+            color: #fff;
+            transition: .3s;
+            i {
+                margin-left: 10px;
+            }   
+            &:hover {
+                background-color: #FE7E00 !important;
+            }
+        }
+        a.lang {
+            font-size: 1.5em;
+            color: #000;
+            font-weight: bold;
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+/* End Header */
+/* Start Services */
+.services {
+    padding: 100px 60px;
+    .bg {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        div {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: calc(100% / 3);
+            min-height: 400px;
+            position: relative;
+            a {
+                margin: 20px 60px 0 0;
+                display: block;
+                background: #999;
+                border-radius: 6px;
+                padding: 2px 15px;
+                width: fit-content;
+                font-size: 13px;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+        .bg-1 {
+            background-image: url(imgs/service-1.png);
+        }
+        .bg-2 {
+            background-image: url(imgs/service-2.png);
+        }
+        .bg-3 {
+            background-image: url(imgs/service-3.png);
+        }
+    }
+    .text {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        .head {
+            line-height: 1.1;
+            color: #ff7f39;
+            font-weight: bold;
+            font-size: 1.1em;
+            h2 {
+                font-size: 3em !important;
+            }
+
+        }
+        & > p {
+            color: #777;
+            font-size: 14px;
+            max-width: calc(100% / 3);
+            text-align: justify;
+        }
+        .mange {
+            background-color: #444444;
+            width: fit-content;
+            height: fit-content;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            h3 {
+                display: inline;
+                margin-right: 5px;
+            }
+            .form {
+                margin-top: 10px;
+                display: flex;
+                position: relative;
+                input {
+                    color: #444;
+                    font-weight: bold;
+                    padding: 5px 7px;
+                    border-radius: 6px;
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                }
+                button {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border: none;
+                    outline: none;
+                    background: #ff7f39;
+                    width: 35%;
+                    color: #fff;
+                    font-size: 19px;
+                    font-weight: bold;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/* End Services */
+/* Start social */
+.social {
+    display: flex;
+    gap: 10px;
+    padding: 20px 60px;
+    background-color: #eee;
+    .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% / 3 - 10px);
+        padding:0 20px;
+        &:not(:last-child) {
+            border-left: 1px solid #000;
+        }
+        p {
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #878787;
+            span {
+                display: block;
+                color: #FE7E00;
+            }
+        }
+        a.num {
+            font-size: 2.3em;
+            letter-spacing: -3px;
+            color: #FE7E00;
+        }
+        .icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            .icon {
+                font-size: 1.7em !important;
+                color: #fe8300;
+            }
+        }
+        .imgs {
+            margin-right: 40px;
+        }
+
+
+    }
+}
+/* End social */
+/* Start quick */
+/* End quick */
+.quick {
+    display: flex;
+    gap: 20px;
+    padding: 50px 60px 30px;
+    align-items: center;
+    h3 {
+        font-size: 2.3em;
+        color: #FE7E00;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 40px;
+        a {
+            font-size: 14px;
+            color: #777;
+            font-weight: bold;
+            transition: .3s;
+            &:hover {
+                color: #ff7f39;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    background-color: #444;
+    p {
+
+    }
+    img {
+
+    }
+}
